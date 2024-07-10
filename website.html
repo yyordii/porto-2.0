@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://kit.fontawesome.com/643031fe3d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="" alt="" class="logo">
+        <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+     <path d="M824,409h1H824z"/>
+     <g>
+       <path d="M736.6,392c-2.6-0.1-5.1-0.2-7.6-0.3c-1.5,5.3-3,10.7-4.6,16c0.8-0.5,1.6-1,2.4-1.6c-0.8,0.6-1.6,1.1-2.4,1.6
+         c-0.4,1.5-0.8,3-1.3,4.4c-1.9,6.7-3.8,13.5-5.7,20.2c0,0,0-0.1,0-0.1c-0.2,7.2-4.2,11.1-8.5,15.9c0.4,0.2,1,0.3,1.7,0.3
+         c4.5-0.1,8.9,0,13.3,0.3c2.2,0.1,3.1-0.8,3.8-3c3.4-10.9,7-21.9,10.4-32.9c2.1-6.7,4.4-13.6,6.6-20.7
+         C742,392.2,739.3,392.1,736.6,392z"/>
+       <path d="M716.5,419.7c-6.3-13.9-12.1-27.1-18.2-40.6c4.4-0.4,8.5-0.8,12.6-1.1c0.5-0.1,1.2,0.9,1.5,1.5c2.9,6.9,5.6,13.8,8.4,20.7
+         c0.3,0.5,0.3,1.2,0.2,1.7C719.6,407.6,718.1,413.3,716.5,419.7z"/>
+     </g>
+     <g>
+       <path id = "buiten" d="M721.5,361.2c20.9-0.3,41,12.8,49.6,31.8c16.4,36-9.9,77.1-49.6,77.2c-39.7-0.1-66-41.1-49.6-77.1
+         C680.5,373.9,700.6,360.9,721.5,361.2L721.5,361.2z M721.5,361.7c-20.5-0.2-40.2,13-47.8,32c-14,34,11.1,71.5,47.8,71.4
+         c36.7,0,61.8-37.5,47.8-71.4C761.7,374.7,742,361.5,721.5,361.7L721.5,361.7z"/>
+     </g>
+     <circle id = "ball"  r="5.2">
+     <animateMotion dur="4s" repeatCount="indefinite"
+             path="M721.5,361.2c20.9-0.3,41,12.8,49.6,31.8c16.4,36-9.9,77.1-49.6,77.2c-39.7-0.1-66-41.1-49.6-77.1
+             C680.5,373.9,700.6,360.9,721.5,361.2L721.5,361.2z">
+     </animateMotion>
+         
+     </circle>
+     </svg>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutme" onclick="scrollToSection(event)">About</a></li>
+          <li><a href="#services" onclick="scrollToSection(event)">Services</a></li>
+          <li><a href="#portfolio" onclick="scrollToSection(event)">Portfolio</a></li>
+          <li><a href="#contact" onclick="scrollToSection(event)">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <img src="" alt="">
+        <p>Web developer</p>
+        <h1>Hi, I'm <span>Yordi</span><br> From the Netherlands</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------about----------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 id="aboutme" class="sub-title">About me</h1>
+          <p>
+            My name is Yordi I am 20 years old and live in the Netherlands
+            I started the WebDevelopment course in 2022 and I have understood here that I would like to make this my job
+            besides gaming.
+            <br>
+            I have several hobbies such as gaming, building computers and much more. I started coding in 2021 when I had
+            nothing to do during the summer holidays, I really liked this and then decided to start an education in
+            this, and now we're here every day I'm getting a little better. and ultimately I want to become the best at
+            what I do
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br>Web app/site Development</li>
+              <li><span>Adobe</span><br>Photoshop/Illustrator</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022</span><br>School projects</li>
+              <li><span>2023</span><br>School projects</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022 - current</span><br>ROC Tilburg</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------services----------------- -->
+      <div id="services">
+        <div class="container">
+          <h1 id="services" class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-regular fa-crop-simple"></i>
+              <h2>Adobe AE</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------portfolio----------------- -->
+      <div id="portfolio">
+        <div class="container">
+          <div class="cube-container">
+            <div class="cube" onclick="window.open('projects.html', '_blank')">
+              <div class="face front">PROJECTS</div>
+              <div class="face back">PROJECTS</div>
+              <div class="face left">PROJECTS</div>
+              <div class="face right">PROJECTS</div>
+              <div class="face top">PROJECTS</div>
+              <div class="face bottom">PROJECTS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------contact----------------- -->
+      <div id="contact">
+        <div class="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> yyordii2003@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0682084748</p>
+                <div class="social-icons">
+                  <a href="https://twitter.com/vaLi_vlr" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/yordi_2003/" target="_blank"><i
+                      class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="fotos/cv yordi.pdf" download target="_blank" class="btn">Download Cv</a>
+              </div>
+              <div class="contact-right">
+                <form>
+                  <input type="text" name="Name" placeholder="Your name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Sumbit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <script>
+          var tablinks = document.getElementsByClassName("tab-links");
+          var tabcontents = document.getElementsByClassName("tab-contents");
+
+          function opentab(tabname) {
+            for (tablink of tablinks) {
+              tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+              tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+          }
+
+        </script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
